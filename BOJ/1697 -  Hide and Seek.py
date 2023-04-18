@@ -6,7 +6,7 @@ max_len = 100_001
 dx = [-1,1]
 def bfs(x):
   global k
-  mattrix[x] = 1
+  matrix[x] = 1
   queue = deque([x])
   while queue:
     pop_x = queue.popleft()
@@ -15,13 +15,13 @@ def bfs(x):
         nx = pop_x * 2
       else:
         nx = pop_x + dx[i]
-      if 0 <= nx < max_len and mattrix[nx] == 0:
-        mattrix[nx] = mattrix[pop_x] + 1
+      if 0 <= nx < max_len and matrix[nx] == 0:
+        matrix[nx] = matrix[pop_x] + 1
         queue.append(nx)
         if nx == k:
           break 
 
 n,k = map(int,input().split())
-mattrix = [0 for _ in range(max_len)]
+matrix = [0 for _ in range(max_len)]
 bfs(n)
-print(mattrix[k]-1)
+print(matrix[k]-1)
