@@ -14,7 +14,7 @@ def post_order(start,end):
 
     post_order(start+1,mid-1)
     post_order(mid,end)
-    #root
+    # 루트출력
     print(pre_order[start])
 
 pre_order = []
