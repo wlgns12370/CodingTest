@@ -4,7 +4,7 @@ input = sys.stdin.readline
 INF = sys.maxsize
 
 def Dijkstra(start):
-    # 현재 노드 , 가중치
+    # weghit , current node
     heap = [[0,start]]
     dist[start] = 0
 
