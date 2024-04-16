@@ -1,3 +1,40 @@
 # Coding Tests
-My dream is to become a programmer that makes good software for the world.
-Therefore, Problem Solving skills must be learnt in order to visualise the above-mentioned goal.
+
+## 주석 규칙
+
+```python
+"""
+    알고리즘
+    -
+	
+    시간복잡도
+    -
+	
+    자료구조
+    -
+"""
+```
+
+## 커밋 컨벤션
+
+커밋 컨벤션은 다음과 같이 작성한다.
+
+```
+커밋 타입 : 제목
+```
+
+### 커밋 타입
+
+| 타입 | 설명 |
+| --- | --- |
+| Upload | 새로운 푼 문제 추가 |
+| Fix | 버그 및 알고리즘 수정 |
+| Rename | 문제 파일명 변경 |
+| Style | 코드 포맷팅 |
+| Chore | 기타 변경사항(md파일 변경, 기타 수정) |
+
+### 제목
+
+- 최대 50글자를 이내
+- 한글로 작성
+- {문제 번호} - {문제명}.{확장자} 형태로 작성
