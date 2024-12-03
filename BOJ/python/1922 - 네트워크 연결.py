@@ -43,4 +43,3 @@ for a,b,c in arr:
         union(p_a, p_b)
         result += c
 print(result)
-print(p)
