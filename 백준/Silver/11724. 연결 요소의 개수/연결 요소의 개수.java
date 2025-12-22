@@ -23,7 +23,7 @@ public class Main {
 
         visited = new boolean[N+1]; // 자동 false
 
-        for (int i = 0; i < M; i++) {
+        while (M-- > 0) {
             st = new StringTokenizer(br.readLine());
             int u = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
