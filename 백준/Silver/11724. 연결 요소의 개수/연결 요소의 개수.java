@@ -43,9 +43,9 @@ public class Main {
 
     static void dfs(int idx) {
         visited[idx] = true;
-        for (int i = 0; i < graph.get(idx).size(); i++) {
-            if (!visited[graph.get(idx).get(i)]) {
-                dfs(graph.get(idx).get(i));
+        for (int next : graph.get(idx)) {
+            if (!visited[next]) {
+                dfs(next);
             }
         }
     }
