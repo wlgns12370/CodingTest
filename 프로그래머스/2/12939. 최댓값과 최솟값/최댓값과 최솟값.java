@@ -2,24 +2,13 @@ import java.util.*;
 
 class Solution {
     public String solution(String s) {
-        
-        StringTokenizer st = new StringTokenizer(s, " ");
-        
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        
-        while(st.hasMoreTokens())
-        {
-            int value = Integer.valueOf(st.nextToken());
-            
-            if (min > value) {
-                min = value;
-            }
-            if (max < value) {
-                max = value;
-            }
+        String[] arr = s.split(" ");
+        int[] arr1 = new int[arr.length];
+        for(int i = 0; i<arr.length;i++){
+            arr1[i] = Integer.parseInt(arr[i]);
         }
-        String answer = min + " " + max;
-        return answer;
+        Arrays.sort(arr1);
+        String str = arr1[0] + " " + arr1[(arr1.length)-1];
+        return str;
     }
 }
